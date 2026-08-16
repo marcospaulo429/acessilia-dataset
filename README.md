@@ -6,12 +6,12 @@ Test documents and expected extraction outputs for the [Acessilia](https://githu
 
 ## Overview
 
-**Acessilia Dataset** provides a shared collection of test documents and their corresponding expected structural manifests for projects in the Acessilia ecosystem, including:
+**Acessilia Dataset** provides a shared collection of test documents, intermediate processing artifacts, and expected accessible outputs for projects in the Acessilia ecosystem, including:
 
 - [acessilia-structure-extractor](https://github.com/A11yDevs/acessilia-structure-extractor) — document structure extraction service
 - [acessilia](https://github.com/A11yDevs/acessilia) — main accessibility processing platform
 
-By maintaining documents and expected outputs in a single repository, all consuming projects can validate their extraction pipelines against the same reference data, ensuring consistent behavior across the ecosystem.
+By maintaining documents, intermediate artifacts, and expected outputs in a single repository, all consuming projects can validate their extraction and accessibility pipelines against the same reference data, ensuring consistent behavior across the ecosystem.
 
 ## Repository Structure
 
@@ -19,45 +19,69 @@ By maintaining documents and expected outputs in a single repository, all consum
 acessilia-dataset/
 ├── README.md
 ├── LICENSE
-├── documents/                          # Source documents for testing
-│   ├── simple/                         # Simple, synthetic documents
-│   │   ├── one-page.pdf                #   1 page, title + paragraph
-│   │   └── one-page.png                #   Same content as image
-│   ├── tutorials/                      # Real-world tutorial PDFs
-│   │   └── java-oo-3pgs.pdf            #   3-page Java OO tutorial
-│   ├── with-tables/                    # Documents containing tables
-│   │   └── budget-table.pdf
-│   └── with-images/                    # Documents with figures
-│       └── scanned-doc.pdf
-├── expected/                           # Expected extraction outputs
-│   └── processing-manifest/            # ProcessingManifest JSON snapshots
-│       ├── one-page.json
-│       ├── java-oo-3pgs.json
-│       ├── budget-table.json
-│       └── scanned-doc.json
-└── scripts/                            # Automation scripts
-    ├── generate-all.sh                 # Regenerate all expected outputs
-    └── README.md
+├── input/                           # Source documents (numbered sequentially)
+│   ├── manifest.csv                 # Metadata per document
+│   ├── 001.pdf                      # java-oo-3pgs (tutorial Java OO)
+│   ├── 002.pdf                      # java-oo-369pgs (tutorial Java OO completo)
+│   ├── 003.pdf                      # java-oo-caps-9-11-39pgs (capítulos 9-11)
+│   ├── 004.pdf                      # java-oo-tables-pg26 (tabelas)
+│   ├── 005.jpeg                     # sunset-skyline (fotografia)
+│   ├── 006.pdf                      # grandezas-e-medidas-42pgs (apostila matemática)
+│   ├── 007.pdf                      # grandezas-e-medidas-pg3-42 (fórmulas)
+│   └── 008.pdf                      # grandezas-e-medidas-pg7-42 (tabela)
+├── intermediate/                    # Intermediate processing artifacts
+│   ├── manifest.csv                 # Maps input_id → intermediate files
+│   ├── processing-manifest/         # ProcessingManifest JSON snapshots
+│   │   ├── 001.json
+│   │   └── ...
+│   ├── canonical-document/          # Canonical document (future)
+│   │   ├── 001.json
+│   │   └── ...
+│   └── pddl-plan/                   # PDDL planning artifacts (future)
+│       ├── 001.json
+│       └── ...
+└── outputs/                         # Expected accessible outputs
+    ├── manifest.csv                 # Maps input_id → output files
+    ├── txt/                         # Plain text
+    │   ├── 001.txt
+    │   └── ...
+    ├── html/                        # Accessible HTML
+    │   ├── 001.html
+    │   └── ...
+    ├── pdf/                         # PDF
+    │   ├── 001.pdf
+    │   └── ...
+    ├── pdf_ua/                      # PDF/UA (accessible PDF)
+    │   ├── 001.pdf
+    │   └── ...
+    ├── mp3/                         # Audio (text-to-speech)
+    │   ├── 001.mp3
+    │   └── ...
+    └── epub/                        # EPUB
+        ├── 001.epub
+        └── ...
 ```
 
-## Document Categories
+## Input Documents
 
-| Category | Description | Source |
-|---|---|---|
-| `simple/` | Synthetic PDFs and images with controlled content | Generated via PyMuPDF |
-| `tutorials/` | Real-world educational PDFs | Acessilia project fixtures |
-| `with-tables/` | Documents containing structured tables | Synthetic + real-world |
-| `with-images/` | Documents with figures, photos, scanned pages | Synthetic + real-world |
+| ID | Original filename | Format | Pages | Domain | Notes |
+|---|---|---|---|---|---|
+| `001` | `java-oo-3pgs.pdf` | pdf | 3 | programação | Tutorial Java OO |
+| `002` | `java-oo-369pgs.pdf` | pdf | 369 | programação | Tutorial Java OO completo |
+| `003` | `java-oo-caps-9-11-39pgs.pdf` | pdf | 39 | programação | Capítulos 9-11 |
+| `004` | `java-oo-tables-pg26.pdf` | pdf | 1 | programação | Tabelas de exemplo |
+| `005` | `sunset-skyline.jpeg` | image | 1 | geral | Fotografia |
+| `006` | `grandezas-e-medidas-42pgs.pdf` | pdf | 42 | matemática | Apostila |
+| `007` | `grandezas-e-medidas-pg3-42.pdf` | pdf | 1 | matemática | Fórmulas |
+| `008` | `grandezas-e-medidas-pg7-42.pdf` | pdf | 1 | matemática | Tabela |
 
-## Expected Outputs
+## Manifests (CSV)
 
-Each document in `documents/` has a corresponding JSON file in `expected/processing-manifest/` containing the **ProcessingManifest** — the canonical structural representation defined by the Acessilia ecosystem.
+Each top-level directory contains a `manifest.csv` that serves as the index:
 
-The expected outputs are generated using a **reference extractor** (either the original Acessilia or the structure-extractor) and committed to this repository so that:
-
-- **Consuming projects** can validate their extraction against known-good snapshots
-- **CI/CD pipelines** can detect regressions when extraction logic changes
-- **New documents** can be added with confidence by generating their expected output automatically
+- **`input/manifest.csv`** — metadata per source document (id, original filename, format, media type, byte size, pages, domain, tables, formulas, images, callouts, chapters, notes)
+- **`intermediate/manifest.csv`** — maps `input_id` → intermediate artifacts (processing-manifest, canonical-document, pddl-plan) with extractor version and configuration
+- **`outputs/manifest.csv`** — maps `input_id` → output files per format (txt, html, pdf, pdf_ua, mp3, epub) with generator version
 
 ## Usage
 
@@ -72,18 +96,19 @@ Then reference documents and expected outputs relative to the submodule path:
 
 ```python
 from pathlib import Path
+import csv
 
 DATASET_DIR = Path("tests/dataset")
 
 
-def get_fixtures() -> list[Path]:
-    return sorted(DATASET_DIR.glob("documents/**/*.pdf"))
+def get_inputs() -> list[Path]:
+    return sorted(DATASET_DIR.glob("input/*"))
 
 
-def get_expected(fixture_path: Path) -> Path:
-    relative = fixture_path.relative_to(DATASET_DIR / "documents")
-    name = relative.with_suffix(".json")
-    return DATASET_DIR / "expected" / "processing-manifest" / name
+def get_manifest(path: str) -> list[dict]:
+    """Load a manifest.csv as a list of dicts."""
+    with (DATASET_DIR / path).open(encoding="utf-8") as f:
+        return list(csv.DictReader(f))
 ```
 
 ### As a Python package (optional)
@@ -93,35 +118,21 @@ pip install acessilia-dataset@git+https://github.com/A11yDevs/acessilia-dataset.
 ```
 
 ```python
-from acessilia_dataset import get_documents_dir, get_expected_dir
+from acessilia_dataset import get_inputs_dir, get_intermediate_dir, get_outputs_dir
 
-for doc in get_documents_dir().rglob("*.pdf"):
+for doc in get_inputs_dir().rglob("*"):
     print(doc)
 ```
-
-## Regenerating Expected Outputs
-
-When the extraction pipeline changes (e.g., Docling version update), expected outputs must be regenerated:
-
-```bash
-# Using the original Acessilia as reference
-bash scripts/generate-all.sh \
-  "python3 /path/to/acessilia/scripts/manifest.py"
-
-# Or using the structure-extractor itself
-bash scripts/generate-all.sh "acessilia-extract"
-```
-
-After regeneration, review the diff and commit the updated snapshots.
 
 ## Contributing
 
 Contributions of new test documents are welcome. Please follow these guidelines:
 
-1. Add the source document to the appropriate `documents/` subdirectory
-2. Generate the expected output using the reference extractor
-3. Ensure the document is small (prefer under 1 MB) and does not contain copyrighted material unless properly licensed
-4. Submit a pull request
+1. Add the source document to `input/` with the next sequential number (`009`, `010`, …)
+2. Record its metadata in `input/manifest.csv`
+3. Generate the intermediate artifacts and outputs using the reference pipeline
+4. Ensure the document is small (prefer under 1 MB) and does not contain copyrighted material unless properly licensed
+5. Submit a pull request
 
 ## Relationship with Acessilia
 
