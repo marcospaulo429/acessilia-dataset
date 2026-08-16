@@ -64,22 +64,22 @@ acessilia-dataset/
 
 ## Input Documents
 
-| ID | Original filename | Format | Pages | Domain | Notes |
-|---|---|---|---|---|---|
-| `001` | `java-oo-3pgs.pdf` | pdf | 3 | programação | Tutorial Java OO |
-| `002` | `java-oo-369pgs.pdf` | pdf | 369 | programação | Tutorial Java OO completo |
-| `003` | `java-oo-caps-9-11-39pgs.pdf` | pdf | 39 | programação | Capítulos 9-11 |
-| `004` | `java-oo-tables-pg26.pdf` | pdf | 1 | programação | Tabelas de exemplo |
-| `005` | `sunset-skyline.jpeg` | image | 1 | geral | Fotografia |
-| `006` | `grandezas-e-medidas-42pgs.pdf` | pdf | 42 | matemática | Apostila |
-| `007` | `grandezas-e-medidas-pg3-42.pdf` | pdf | 1 | matemática | Fórmulas |
-| `008` | `grandezas-e-medidas-pg7-42.pdf` | pdf | 1 | matemática | Tabela |
+| ID | Original filename | Format | Pages | Language | Domain | Notes |
+|---|---|---|---|---|---|---|
+| `001` | `java-oo-3pgs.pdf` | pdf | 3 | pt-BR | programming | Java OO tutorial |
+| `002` | `java-oo-369pgs.pdf` | pdf | 369 | pt-BR | programming | Complete Java OO tutorial |
+| `003` | `java-oo-caps-9-11-39pgs.pdf` | pdf | 39 | pt-BR | programming | Chapters 9-11 |
+| `004` | `java-oo-tables-pg26.pdf` | pdf | 1 | pt-BR | programming | Example tables |
+| `005` | `sunset-skyline.jpeg` | image | 1 | pt-BR | general | Photograph |
+| `006` | `grandezas-e-medidas-42pgs.pdf` | pdf | 42 | pt-BR | chemistry | Presentation |
+| `007` | `grandezas-e-medidas-pg3-42.pdf` | pdf | 1 | pt-BR | chemistry | |
+| `008` | `grandezas-e-medidas-pg7-42.pdf` | pdf | 1 | pt-BR | chemistry | |
 
 ## Manifests (CSV)
 
 Each top-level directory contains a `manifest.csv` that serves as the index:
 
-- **`input/manifest.csv`** — metadata per source document (id, original filename, format, media type, byte size, pages, domain, tables, formulas, images, callouts, chapters, notes)
+- **`input/manifest.csv`** — metadata per source document (id, original filename, format, media type, byte size, pages, language, domain, tables, formulas, images, callouts, chapters, notes)
 - **`intermediate/manifest.csv`** — maps `input_id` → intermediate artifacts (processing-manifest, canonical-document, pddl-plan) with extractor version and configuration
 - **`outputs/manifest.csv`** — maps `input_id` → output files per format (txt, html, pdf, pdf_ua, mp3, epub) with generator version
 
