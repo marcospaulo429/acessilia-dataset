@@ -72,8 +72,8 @@ acessilia-dataset/
 | `004` | `java-oo-tables-pg26.pdf` | pdf | 1 | pt-BR | programming | Example tables |
 | `005` | `sunset-skyline.jpeg` | image | 1 | pt-BR | general | Photograph |
 | `006` | `grandezas-e-medidas-42pgs.pdf` | pdf | 42 | pt-BR | chemistry | Presentation |
-| `007` | `grandezas-e-medidas-pg3-42.pdf` | pdf | 1 | pt-BR | chemistry | |
-| `008` | `grandezas-e-medidas-pg7-42.pdf` | pdf | 1 | pt-BR | chemistry | |
+| `007` | `grandezas-e-medidas-pg3-42.pdf` | pdf | 1 | pt-BR | chemistry | Tables |
+| `008` | `grandezas-e-medidas-pg7-42.pdf` | pdf | 1 | pt-BR | chemistry | Bar chart |
 
 ## Manifests (CSV)
 

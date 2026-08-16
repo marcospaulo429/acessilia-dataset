@@ -5,5 +5,5 @@ id,original_filename,format,media_type,byte_size,pages,language,domain,tables,fo
 004,java-oo-tables-pg26.pdf,pdf,application/pdf,358314,1,pt-BR,programming,1,0,0,0,0,"Page 26 — example tables"
 005,sunset-skyline.jpeg,image,image/jpeg,130493,1,pt-BR,general,0,0,1,0,0,"Sunset photograph"
 006,grandezas-e-medidas-42pgs.pdf,pdf,application/pdf,2260430,42,pt-BR,chemistry,3,5,15,2,8,"Presentation"
-007,grandezas-e-medidas-pg3-42.pdf,pdf,application/pdf,648946,1,pt-BR,chemistry,0,1,2,0,0,""
-008,grandezas-e-medidas-pg7-42.pdf,pdf,application/pdf,642162,1,pt-BR,chemistry,1,0,1,0,0,""
+007,grandezas-e-medidas-pg3-42.pdf,pdf,application/pdf,648946,1,pt-BR,chemistry,0,1,2,0,0,"Tables"
+008,grandezas-e-medidas-pg7-42.pdf,pdf,application/pdf,642162,1,pt-BR,chemistry,1,0,1,0,0,"Bar chart"
