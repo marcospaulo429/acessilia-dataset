@@ -1,0 +1,68 @@
+{
+  "$schema": "urn:a11y-devs:schema:nominal-plan:1.0.0",
+  "schema_version": "1.0.0",
+  "plan_id": "plan-1335281818abc390",
+  "generated_at": "2026-08-17T01:35:22.219824Z",
+  "status": "nominal",
+  "manifest_id": "manifest-b5dbe02e17dd536e-r1",
+  "manifest_revision": 1,
+  "manifest_sha256": "3f3edb8d061408af5fa000bdc322e388e0022d9c4f9f86b8df04d7352b397754",
+  "domain": {
+    "name": "acessilia-obligations",
+    "version": "2.2",
+    "domain_sha256": "c9c597122cef717105e87fc79c2a86aae9e038f592efb4f1e53ef66b3d7b5c1a",
+    "description_sha256": "4fd55fc0b3c5bc582523863d89a04c9f8fcb0f54ce5b959f46a6e15261bdf703"
+  },
+  "problem_name": "manifest-b5dbe02e17dd536e-r1",
+  "problem_sha256": "6b87ff05438f3811fdbdee6df5229a195daa3f9599a0d55c5f9e67402cd5e59e",
+  "planner": "internal-reference",
+  "metric": "minimize-total-cost",
+  "selected_obligations": [
+    "obligation-linearize-table-000004",
+    "obligation-linearize-table-000007",
+    "obligation-preserve-code-semantics-000010"
+  ],
+  "expected_total_cost": 30,
+  "steps": [
+    {
+      "index": 0,
+      "action": "start-job",
+      "obligation_id": null,
+      "obligation_kind": null,
+      "method": null,
+      "expected_cost": 0
+    },
+    {
+      "index": 1,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-linearize-table-000004",
+      "obligation_kind": "linearize-table",
+      "method": "docling-table",
+      "expected_cost": 10
+    },
+    {
+      "index": 2,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-linearize-table-000007",
+      "obligation_kind": "linearize-table",
+      "method": "docling-table",
+      "expected_cost": 10
+    },
+    {
+      "index": 3,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000010",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 4,
+      "action": "complete-job",
+      "obligation_id": null,
+      "obligation_kind": null,
+      "method": null,
+      "expected_cost": 0
+    }
+  ]
+}

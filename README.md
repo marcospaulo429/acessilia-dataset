@@ -130,9 +130,51 @@ Contributions of new test documents are welcome. Please follow these guidelines:
 
 1. Add the source document to `input/` with the next sequential number (`009`, `010`, …)
 2. Record its metadata in `input/manifest.csv`
-3. Generate the intermediate artifacts and outputs using the reference pipeline
+3. Generate the intermediate artifacts using the reference pipeline (see below)
 4. Ensure the document is small (prefer under 1 MB) and does not contain copyrighted material unless properly licensed
 5. Submit a pull request
+
+### Generating intermediate artifacts
+
+The intermediate artifacts (ProcessingManifest, PDDL plan, canonical document) are generated using the Acessilia pipeline with Docling + PDDL.
+
+From the root of the `acessilia` repository, use the helper script:
+
+```bash
+# Process all documents (skipping those with >40 pages)
+docker run --rm \
+  -v $(pwd):/app -w /app \
+  acessilia:test-pr24 \
+  python scripts/generate_dataset_intermediates.py
+
+# Process specific documents only
+docker run --rm \
+  -v $(pwd):/app -w /app \
+  acessilia:test-pr24 \
+  python scripts/generate_dataset_intermediates.py --ids 001 003 005
+
+# Skip already-generated artifacts, just rewrite manifest.csv
+docker run --rm \
+  -v $(pwd):/app -w /app \
+  acessilia:test-pr24 \
+  python scripts/generate_dataset_intermediates.py --skip-existing
+
+# Adjust max page threshold
+docker run --rm \
+  -v $(pwd):/app -w /app \
+  acessilia:test-pr24 \
+  python scripts/generate_dataset_intermediates.py --max-pages 50
+```
+
+The script reads `input/manifest.csv`, processes each document through the Docling → PDDL planner → canonical builder pipeline, and writes:
+
+| Artifact | Directory | Format |
+|---|---|---|
+| ProcessingManifest | `intermediate/processing-manifest/` | JSON (schema v1.1.0) |
+| PDDL NominalPlan | `intermediate/pddl-plan/` | JSON |
+| Canonical Document | `intermediate/canonical-document/` | JSON (schema v1.0.0) |
+
+The `intermediate/manifest.csv` is updated automatically after each run.
 
 ## Relationship with Acessilia
 

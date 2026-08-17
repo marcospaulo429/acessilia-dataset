@@ -1,25 +1,25 @@
 input_id,intermediate_type,file_path,extractor_version,extractor_config,duration_ms,status
-001,processing-manifest,processing-manifest/001.json,,,,
-001,canonical-document,canonical-document/001.json,,,,
-001,pddl-plan,pddl-plan/001.json,,,,
-002,processing-manifest,processing-manifest/002.json,,,,
-002,canonical-document,canonical-document/002.json,,,,
-002,pddl-plan,pddl-plan/002.json,,,,
-003,processing-manifest,processing-manifest/003.json,,,,
-003,canonical-document,canonical-document/003.json,,,,
-003,pddl-plan,pddl-plan/003.json,,,,
-004,processing-manifest,processing-manifest/004.json,,,,
-004,canonical-document,canonical-document/004.json,,,,
-004,pddl-plan,pddl-plan/004.json,,,,
-005,processing-manifest,processing-manifest/005.json,,,,
-005,canonical-document,canonical-document/005.json,,,,
-005,pddl-plan,pddl-plan/005.json,,,,
-006,processing-manifest,processing-manifest/006.json,,,,
-006,canonical-document,canonical-document/006.json,,,,
-006,pddl-plan,pddl-plan/006.json,,,,
-007,processing-manifest,processing-manifest/007.json,,,,
-007,canonical-document,canonical-document/007.json,,,,
-007,pddl-plan,pddl-plan/007.json,,,,
-008,processing-manifest,processing-manifest/008.json,,,,
-008,canonical-document,canonical-document/008.json,,,,
-008,pddl-plan,pddl-plan/008.json,,,,
+001,processing-manifest,processing-manifest/001.json,2.87.0,"{""ocr"": true, ""table_structure"": true, ""remote_services"": false}",123246,completed
+001,canonical-document,canonical-document/001.json,,,,completed
+001,pddl-plan,pddl-plan/001.json,,,,completed
+002,processing-manifest,processing-manifest/002.json,,,,skipped
+002,canonical-document,canonical-document/002.json,,,,skipped
+002,pddl-plan,pddl-plan/002.json,,,,skipped
+003,processing-manifest,processing-manifest/003.json,2.87.0,"{""ocr"": true, ""table_structure"": true, ""remote_services"": false}",312315,completed
+003,canonical-document,canonical-document/003.json,,,,completed
+003,pddl-plan,pddl-plan/003.json,,,,completed
+004,processing-manifest,processing-manifest/004.json,2.87.0,"{""ocr"": true, ""table_structure"": true, ""remote_services"": false}",60932,completed
+004,canonical-document,canonical-document/004.json,,,,completed
+004,pddl-plan,pddl-plan/004.json,,,,completed
+005,processing-manifest,processing-manifest/005.json,2.87.0,"{""ocr"": true, ""table_structure"": true, ""remote_services"": false}",75897,completed
+005,canonical-document,canonical-document/005.json,,,,completed
+005,pddl-plan,pddl-plan/005.json,,,,completed
+006,processing-manifest,processing-manifest/006.json,,,,skipped
+006,canonical-document,canonical-document/006.json,,,,skipped
+006,pddl-plan,pddl-plan/006.json,,,,skipped
+007,processing-manifest,processing-manifest/007.json,2.87.0,"{""ocr"": true, ""table_structure"": true, ""remote_services"": false}",86459,completed
+007,canonical-document,canonical-document/007.json,,,,completed
+007,pddl-plan,pddl-plan/007.json,,,,completed
+008,processing-manifest,processing-manifest/008.json,2.87.0,"{""ocr"": true, ""table_structure"": true, ""remote_services"": false}",110564,completed
+008,canonical-document,canonical-document/008.json,,,,completed
+008,pddl-plan,pddl-plan/008.json,,,,completed

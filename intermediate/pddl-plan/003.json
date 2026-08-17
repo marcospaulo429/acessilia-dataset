@@ -1,0 +1,806 @@
+{
+  "$schema": "urn:a11y-devs:schema:nominal-plan:1.0.0",
+  "schema_version": "1.0.0",
+  "plan_id": "plan-0ca6ce4ae25b3312",
+  "generated_at": "2026-08-17T01:34:20.320470Z",
+  "status": "nominal",
+  "manifest_id": "manifest-822dbccf6ffe7bbf-r1",
+  "manifest_revision": 1,
+  "manifest_sha256": "cb4b1c00b769936d042594ccbf3890843d75811852783ab051f7fefde75a0372",
+  "domain": {
+    "name": "acessilia-obligations",
+    "version": "2.2",
+    "domain_sha256": "c9c597122cef717105e87fc79c2a86aae9e038f592efb4f1e53ef66b3d7b5c1a",
+    "description_sha256": "4fd55fc0b3c5bc582523863d89a04c9f8fcb0f54ce5b959f46a6e15261bdf703"
+  },
+  "problem_name": "manifest-822dbccf6ffe7bbf-r1",
+  "problem_sha256": "4312671ebdcb49daeb456b1aad40b487606265c22c913e0a66d37319a8af2482",
+  "planner": "internal-reference",
+  "metric": "minimize-total-cost",
+  "selected_obligations": [
+    "obligation-describe-image-000024",
+    "obligation-describe-image-000037",
+    "obligation-describe-image-000044",
+    "obligation-describe-image-000076",
+    "obligation-describe-image-000093",
+    "obligation-describe-image-000125",
+    "obligation-describe-image-000138",
+    "obligation-describe-image-000194",
+    "obligation-describe-image-000214",
+    "obligation-describe-image-000227",
+    "obligation-describe-image-000252",
+    "obligation-describe-image-000264",
+    "obligation-describe-image-000284",
+    "obligation-describe-image-000326",
+    "obligation-describe-image-000346",
+    "obligation-describe-image-000356",
+    "obligation-describe-image-000367",
+    "obligation-describe-image-000389",
+    "obligation-describe-image-000405",
+    "obligation-describe-image-000428",
+    "obligation-describe-image-000449",
+    "obligation-describe-image-000520",
+    "obligation-preserve-code-semantics-000012",
+    "obligation-preserve-code-semantics-000014",
+    "obligation-preserve-code-semantics-000015",
+    "obligation-preserve-code-semantics-000022",
+    "obligation-preserve-code-semantics-000025",
+    "obligation-preserve-code-semantics-000030",
+    "obligation-preserve-code-semantics-000051",
+    "obligation-preserve-code-semantics-000053",
+    "obligation-preserve-code-semantics-000056",
+    "obligation-preserve-code-semantics-000057",
+    "obligation-preserve-code-semantics-000059",
+    "obligation-preserve-code-semantics-000062",
+    "obligation-preserve-code-semantics-000068",
+    "obligation-preserve-code-semantics-000070",
+    "obligation-preserve-code-semantics-000077",
+    "obligation-preserve-code-semantics-000083",
+    "obligation-preserve-code-semantics-000099",
+    "obligation-preserve-code-semantics-000101",
+    "obligation-preserve-code-semantics-000104",
+    "obligation-preserve-code-semantics-000107",
+    "obligation-preserve-code-semantics-000121",
+    "obligation-preserve-code-semantics-000122",
+    "obligation-preserve-code-semantics-000161",
+    "obligation-preserve-code-semantics-000166",
+    "obligation-preserve-code-semantics-000186",
+    "obligation-preserve-code-semantics-000187",
+    "obligation-preserve-code-semantics-000204",
+    "obligation-preserve-code-semantics-000210",
+    "obligation-preserve-code-semantics-000222",
+    "obligation-preserve-code-semantics-000223",
+    "obligation-preserve-code-semantics-000226",
+    "obligation-preserve-code-semantics-000243",
+    "obligation-preserve-code-semantics-000247",
+    "obligation-preserve-code-semantics-000296",
+    "obligation-preserve-code-semantics-000303",
+    "obligation-preserve-code-semantics-000311",
+    "obligation-preserve-code-semantics-000313",
+    "obligation-preserve-code-semantics-000324",
+    "obligation-preserve-code-semantics-000325",
+    "obligation-preserve-code-semantics-000333",
+    "obligation-preserve-code-semantics-000335",
+    "obligation-preserve-code-semantics-000337",
+    "obligation-preserve-code-semantics-000343",
+    "obligation-preserve-code-semantics-000345",
+    "obligation-preserve-code-semantics-000380",
+    "obligation-preserve-code-semantics-000383",
+    "obligation-preserve-code-semantics-000388",
+    "obligation-preserve-code-semantics-000390",
+    "obligation-preserve-code-semantics-000401",
+    "obligation-preserve-code-semantics-000403",
+    "obligation-preserve-code-semantics-000406",
+    "obligation-preserve-code-semantics-000409",
+    "obligation-preserve-code-semantics-000411",
+    "obligation-preserve-code-semantics-000469",
+    "obligation-preserve-code-semantics-000471",
+    "obligation-preserve-code-semantics-000484",
+    "obligation-preserve-code-semantics-000485",
+    "obligation-preserve-code-semantics-000488",
+    "obligation-preserve-code-semantics-000495",
+    "obligation-preserve-code-semantics-000496",
+    "obligation-preserve-code-semantics-000503",
+    "obligation-preserve-code-semantics-000507",
+    "obligation-preserve-code-semantics-000509"
+  ],
+  "expected_total_cost": 1070,
+  "steps": [
+    {
+      "index": 0,
+      "action": "start-job",
+      "obligation_id": null,
+      "obligation_kind": null,
+      "method": null,
+      "expected_cost": 0
+    },
+    {
+      "index": 1,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-describe-image-000024",
+      "obligation_kind": "describe-image",
+      "method": "vision-description",
+      "expected_cost": 20
+    },
+    {
+      "index": 2,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-describe-image-000037",
+      "obligation_kind": "describe-image",
+      "method": "vision-description",
+      "expected_cost": 20
+    },
+    {
+      "index": 3,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-describe-image-000044",
+      "obligation_kind": "describe-image",
+      "method": "vision-description",
+      "expected_cost": 20
+    },
+    {
+      "index": 4,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-describe-image-000076",
+      "obligation_kind": "describe-image",
+      "method": "vision-description",
+      "expected_cost": 20
+    },
+    {
+      "index": 5,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-describe-image-000093",
+      "obligation_kind": "describe-image",
+      "method": "vision-description",
+      "expected_cost": 20
+    },
+    {
+      "index": 6,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-describe-image-000125",
+      "obligation_kind": "describe-image",
+      "method": "vision-description",
+      "expected_cost": 20
+    },
+    {
+      "index": 7,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-describe-image-000138",
+      "obligation_kind": "describe-image",
+      "method": "vision-description",
+      "expected_cost": 20
+    },
+    {
+      "index": 8,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-describe-image-000194",
+      "obligation_kind": "describe-image",
+      "method": "vision-description",
+      "expected_cost": 20
+    },
+    {
+      "index": 9,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-describe-image-000214",
+      "obligation_kind": "describe-image",
+      "method": "vision-description",
+      "expected_cost": 20
+    },
+    {
+      "index": 10,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-describe-image-000227",
+      "obligation_kind": "describe-image",
+      "method": "vision-description",
+      "expected_cost": 20
+    },
+    {
+      "index": 11,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-describe-image-000252",
+      "obligation_kind": "describe-image",
+      "method": "vision-description",
+      "expected_cost": 20
+    },
+    {
+      "index": 12,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-describe-image-000264",
+      "obligation_kind": "describe-image",
+      "method": "vision-description",
+      "expected_cost": 20
+    },
+    {
+      "index": 13,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-describe-image-000284",
+      "obligation_kind": "describe-image",
+      "method": "vision-description",
+      "expected_cost": 20
+    },
+    {
+      "index": 14,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-describe-image-000326",
+      "obligation_kind": "describe-image",
+      "method": "vision-description",
+      "expected_cost": 20
+    },
+    {
+      "index": 15,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-describe-image-000346",
+      "obligation_kind": "describe-image",
+      "method": "vision-description",
+      "expected_cost": 20
+    },
+    {
+      "index": 16,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-describe-image-000356",
+      "obligation_kind": "describe-image",
+      "method": "vision-description",
+      "expected_cost": 20
+    },
+    {
+      "index": 17,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-describe-image-000367",
+      "obligation_kind": "describe-image",
+      "method": "vision-description",
+      "expected_cost": 20
+    },
+    {
+      "index": 18,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-describe-image-000389",
+      "obligation_kind": "describe-image",
+      "method": "vision-description",
+      "expected_cost": 20
+    },
+    {
+      "index": 19,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-describe-image-000405",
+      "obligation_kind": "describe-image",
+      "method": "vision-description",
+      "expected_cost": 20
+    },
+    {
+      "index": 20,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-describe-image-000428",
+      "obligation_kind": "describe-image",
+      "method": "vision-description",
+      "expected_cost": 20
+    },
+    {
+      "index": 21,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-describe-image-000449",
+      "obligation_kind": "describe-image",
+      "method": "vision-description",
+      "expected_cost": 20
+    },
+    {
+      "index": 22,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-describe-image-000520",
+      "obligation_kind": "describe-image",
+      "method": "vision-description",
+      "expected_cost": 20
+    },
+    {
+      "index": 23,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000012",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 24,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000014",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 25,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000015",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 26,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000022",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 27,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000025",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 28,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000030",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 29,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000051",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 30,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000053",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 31,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000056",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 32,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000057",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 33,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000059",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 34,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000062",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 35,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000068",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 36,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000070",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 37,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000077",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 38,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000083",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 39,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000099",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 40,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000101",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 41,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000104",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 42,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000107",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 43,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000121",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 44,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000122",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 45,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000161",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 46,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000166",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 47,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000186",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 48,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000187",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 49,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000204",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 50,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000210",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 51,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000222",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 52,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000223",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 53,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000226",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 54,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000243",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 55,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000247",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 56,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000296",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 57,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000303",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 58,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000311",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 59,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000313",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 60,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000324",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 61,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000325",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 62,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000333",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 63,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000335",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 64,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000337",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 65,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000343",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 66,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000345",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 67,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000380",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 68,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000383",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 69,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000388",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 70,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000390",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 71,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000401",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 72,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000403",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 73,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000406",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 74,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000409",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 75,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000411",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 76,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000469",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 77,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000471",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 78,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000484",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 79,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000485",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 80,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000488",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 81,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000495",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 82,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000496",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 83,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000503",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 84,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000507",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 85,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000509",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 86,
+      "action": "complete-job",
+      "obligation_id": null,
+      "obligation_kind": null,
+      "method": null,
+      "expected_cost": 0
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "$schema": "urn:a11y-devs:schema:nominal-plan:1.0.0",
+  "schema_version": "1.0.0",
+  "plan_id": "plan-ebd34b3d3a10af5e",
+  "generated_at": "2026-08-17T01:36:49.774462Z",
+  "status": "nominal",
+  "manifest_id": "manifest-965a50c5055cb4f1-r1",
+  "manifest_revision": 1,
+  "manifest_sha256": "771e49400ecfade5cc867b77481e3dac859c3ce9aa2f0b845a99b0922c7ff2ec",
+  "domain": {
+    "name": "acessilia-obligations",
+    "version": "2.2",
+    "domain_sha256": "c9c597122cef717105e87fc79c2a86aae9e038f592efb4f1e53ef66b3d7b5c1a",
+    "description_sha256": "4fd55fc0b3c5bc582523863d89a04c9f8fcb0f54ce5b959f46a6e15261bdf703"
+  },
+  "problem_name": "manifest-965a50c5055cb4f1-r1",
+  "problem_sha256": "86284a98f12b012031228135b10c63789c91a43ca462509391f0f3ca329035d3",
+  "planner": "internal-reference",
+  "metric": "minimize-total-cost",
+  "selected_obligations": [
+    "obligation-linearize-table-000003"
+  ],
+  "expected_total_cost": 10,
+  "steps": [
+    {
+      "index": 0,
+      "action": "start-job",
+      "obligation_id": null,
+      "obligation_kind": null,
+      "method": null,
+      "expected_cost": 0
+    },
+    {
+      "index": 1,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-linearize-table-000003",
+      "obligation_kind": "linearize-table",
+      "method": "docling-table",
+      "expected_cost": 10
+    },
+    {
+      "index": 2,
+      "action": "complete-job",
+      "obligation_id": null,
+      "obligation_kind": null,
+      "method": null,
+      "expected_cost": 0
+    }
+  ]
+}
