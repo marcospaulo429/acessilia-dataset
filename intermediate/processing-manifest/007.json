@@ -1,0 +1,174 @@
+{
+  "$schema": "urn:a11y-devs:schema:processing-manifest:1.1.0",
+  "schema_version": "1.1.0",
+  "manifest_id": "manifest-965a50c5055cb4f1-r1",
+  "revision": 1,
+  "status": "extracted",
+  "created_at": "2026-08-17T01:36:48.735474Z",
+  "source": {
+    "document_id": "doc-965a50c5055cb4f1",
+    "filename": "007.pdf",
+    "path": "/app/tests/dataset/input/007.pdf",
+    "media_type": "application/pdf",
+    "byte_size": 648946,
+    "sha256": "965a50c5055cb4f138f3962f16b0821e73314458e8e707883838e6771589b10b"
+  },
+  "extractor": {
+    "name": "docling",
+    "version": "2.87.0",
+    "started_at": "2026-08-17T01:35:22.291763Z",
+    "completed_at": "2026-08-17T01:36:48.735474Z",
+    "duration_ms": 86459,
+    "configuration": {
+      "ocr": true,
+      "table_structure": true,
+      "remote_services": false
+    }
+  },
+  "title": "SISTEMA INTERNACIONAL DE UNIDADES (SI) Grandezas e Unidades de Base",
+  "language": "pt-BR",
+  "pages": [
+    {
+      "page_number": 1,
+      "width": 960.0,
+      "height": 540.0,
+      "element_ids": [
+        "element-000002",
+        "element-000003"
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "id": "element-000001",
+      "type": "group",
+      "raw_label": "unspecified",
+      "reading_order": 1,
+      "hierarchy_level": 0,
+      "text": "_root_",
+      "source_ref": "#/body",
+      "parent_ref": null,
+      "parent_id": null,
+      "page_number": null,
+      "confidence": null,
+      "provenance": [],
+      "metadata": {
+        "docling_class": "GroupItem",
+        "content_layer": "body"
+      }
+    },
+    {
+      "id": "element-000002",
+      "type": "heading",
+      "raw_label": "section_header",
+      "reading_order": 2,
+      "hierarchy_level": 1,
+      "text": "SISTEMA INTERNACIONAL DE UNIDADES (SI) Grandezas e Unidades de Base",
+      "source_ref": "#/texts/0",
+      "parent_ref": "#/body",
+      "parent_id": "element-000001",
+      "page_number": 1,
+      "confidence": null,
+      "provenance": [
+        {
+          "page_number": 1,
+          "bbox": {
+            "left": 284.51613362630206,
+            "top": 521.196428934733,
+            "right": 649.8387451171875,
+            "bottom": 472.9821421305339,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "char_start": 0,
+          "char_end": 67
+        }
+      ],
+      "metadata": {
+        "docling_class": "SectionHeaderItem",
+        "content_layer": "body"
+      }
+    },
+    {
+      "id": "element-000003",
+      "type": "table",
+      "raw_label": "table",
+      "reading_order": 3,
+      "hierarchy_level": 1,
+      "text": null,
+      "source_ref": "#/tables/0",
+      "parent_ref": "#/body",
+      "parent_id": "element-000001",
+      "page_number": 1,
+      "confidence": null,
+      "provenance": [
+        {
+          "page_number": 1,
+          "bbox": {
+            "left": 84.5426254272461,
+            "top": 445.30982208251953,
+            "right": 856.9712524414062,
+            "bottom": 35.4071044921875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "char_start": 0,
+          "char_end": 0
+        }
+      ],
+      "metadata": {
+        "docling_class": "TableItem",
+        "content_layer": "body"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "id": "observation-linearize-table-000003",
+      "kind": "table-requires-processing",
+      "severity": "warning",
+      "message": "A tabela deve ter cabeçalhos e ordem de leitura verificáveis.",
+      "target_ids": [
+        "element-000003"
+      ],
+      "evidence": {
+        "raw_label": "table",
+        "page_number": 1
+      }
+    }
+  ],
+  "obligations": [
+    {
+      "id": "obligation-linearize-table-000003",
+      "kind": "linearize-table",
+      "status": "candidate",
+      "selected": false,
+      "target_ids": [
+        "element-000003"
+      ],
+      "dependencies": [],
+      "admissible_methods": [
+        "docling-table",
+        "pandoc-table",
+        "human-review"
+      ],
+      "method_costs": {
+        "docling-table": 10,
+        "pandoc-table": 15,
+        "human-review": 100
+      },
+      "attempts": [],
+      "rationale": "A tabela deve ter cabeçalhos e ordem de leitura verificáveis."
+    }
+  ],
+  "artifacts": [],
+  "summary": {
+    "page_count": 1,
+    "element_count": 3,
+    "observation_count": 1,
+    "obligation_count": 1,
+    "element_types": {
+      "group": 1,
+      "heading": 1,
+      "table": 1
+    }
+  }
+}

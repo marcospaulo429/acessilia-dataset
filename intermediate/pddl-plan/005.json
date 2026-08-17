@@ -1,0 +1,40 @@
+{
+  "$schema": "urn:a11y-devs:schema:nominal-plan:1.0.0",
+  "schema_version": "1.0.0",
+  "plan_id": "plan-08422dadf7ba6e0a",
+  "generated_at": "2026-08-17T01:41:53.413849Z",
+  "status": "nominal",
+  "manifest_id": "manifest-efe4501b2bf0db2a-r1",
+  "manifest_revision": 1,
+  "manifest_sha256": "6f99586c9a0e8e20f455f99d9fdd2d17f5d5c3de42c8e318085adab3e6165b00",
+  "domain": {
+    "name": "acessilia-obligations",
+    "version": "2.2",
+    "domain_sha256": "c9c597122cef717105e87fc79c2a86aae9e038f592efb4f1e53ef66b3d7b5c1a",
+    "description_sha256": "4fd55fc0b3c5bc582523863d89a04c9f8fcb0f54ce5b959f46a6e15261bdf703"
+  },
+  "problem_name": "manifest-efe4501b2bf0db2a-r1",
+  "problem_sha256": "13954c01a447ba765c2d4cac4a690b4b08274c38790290e42e04afe43a8632bb",
+  "planner": "internal-reference",
+  "metric": "minimize-total-cost",
+  "selected_obligations": [],
+  "expected_total_cost": 0,
+  "steps": [
+    {
+      "index": 0,
+      "action": "start-job",
+      "obligation_id": null,
+      "obligation_kind": null,
+      "method": null,
+      "expected_cost": 0
+    },
+    {
+      "index": 1,
+      "action": "complete-job",
+      "obligation_id": null,
+      "obligation_kind": null,
+      "method": null,
+      "expected_cost": 0
+    }
+  ]
+}

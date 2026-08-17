@@ -1,0 +1,104 @@
+{
+  "$schema": "urn:a11y-devs:schema:nominal-plan:1.0.0",
+  "schema_version": "1.0.0",
+  "plan_id": "plan-7eee96e3f3fca5fe",
+  "generated_at": "2026-08-17T01:29:06.697448Z",
+  "status": "nominal",
+  "manifest_id": "manifest-2ec8bda39e8d18df-r1",
+  "manifest_revision": 1,
+  "manifest_sha256": "b36f121949c9b17ff9f4bd15f50a33087b26982693f98ed0ac7d7708c1d79f66",
+  "domain": {
+    "name": "acessilia-obligations",
+    "version": "2.2",
+    "domain_sha256": "c9c597122cef717105e87fc79c2a86aae9e038f592efb4f1e53ef66b3d7b5c1a",
+    "description_sha256": "4fd55fc0b3c5bc582523863d89a04c9f8fcb0f54ce5b959f46a6e15261bdf703"
+  },
+  "problem_name": "manifest-2ec8bda39e8d18df-r1",
+  "problem_sha256": "b887516c61bc4555d896c787b3f02beb20375c3146afca314d114514398a5e11",
+  "planner": "internal-reference",
+  "metric": "minimize-total-cost",
+  "selected_obligations": [
+    "obligation-describe-image-000024",
+    "obligation-preserve-code-semantics-000012",
+    "obligation-preserve-code-semantics-000014",
+    "obligation-preserve-code-semantics-000015",
+    "obligation-preserve-code-semantics-000022",
+    "obligation-preserve-code-semantics-000025",
+    "obligation-preserve-code-semantics-000030"
+  ],
+  "expected_total_cost": 80,
+  "steps": [
+    {
+      "index": 0,
+      "action": "start-job",
+      "obligation_id": null,
+      "obligation_kind": null,
+      "method": null,
+      "expected_cost": 0
+    },
+    {
+      "index": 1,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-describe-image-000024",
+      "obligation_kind": "describe-image",
+      "method": "vision-description",
+      "expected_cost": 20
+    },
+    {
+      "index": 2,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000012",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 3,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000014",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 4,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000015",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 5,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000022",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 6,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000025",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 7,
+      "action": "execute-obligation",
+      "obligation_id": "obligation-preserve-code-semantics-000030",
+      "obligation_kind": "preserve-code-semantics",
+      "method": "pandoc-code",
+      "expected_cost": 10
+    },
+    {
+      "index": 8,
+      "action": "complete-job",
+      "obligation_id": null,
+      "obligation_kind": null,
+      "method": null,
+      "expected_cost": 0
+    }
+  ]
+}
